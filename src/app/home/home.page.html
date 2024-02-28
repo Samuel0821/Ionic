@@ -1,0 +1,23 @@
+<p>Hola soy el home</p>
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-center>
+    <swiper-container
+    [paginatiom]="true";
+    [slidesPerView]="3"
+    >
+        <swipr-slide *ngFor="let slide of event_list">
+            <img src="{{slide.imge}}">
+        </swipr-slide>
+    </swiper-container>
+</ion-center>
+
+
+

@@ -1,0 +1,42 @@
+{
+    "events": [
+      {
+        "id": 1,
+        "title": "Conferencia sobre Tecnología",
+        "description": "Una conferencia informativa sobre los últimos avances tecnológicos.",
+        "date": "2024-03-15",
+        "location": "Centro de Convenciones XYZ"
+      },
+      {
+        "id": 2,
+        "title": "Taller de Desarrollo Web",
+        "description": "Un taller práctico sobre el desarrollo web moderno.",
+        "date": "2024-03-20",
+        "location": "Espacio de Coworking ABC"
+      },
+      {
+        "id": 3,
+        "title": "Exposición de Arte",
+        "description": "Una exposición de arte contemporáneo con artistas locales.",
+        "date": "2024-04-05",
+        "location": "Galería de Arte DEF"
+      }
+    ],
+    
+      "categories": [
+        {
+          "id": 1,
+          "name": "Category 1"
+        },
+        {
+          "id": 2,
+          "name": "Category 2"
+        },
+        {
+          "id": 3,
+          "name": "Category 3"
+        }
+      ]
+    }
+  
+  

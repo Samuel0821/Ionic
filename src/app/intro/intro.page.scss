@@ -1,0 +1,30 @@
+swiper-container {
+    width: 100%;
+    heigth: 100%;
+  }
+  
+  swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar-slide {
+    --border-radius: 0px;
+  }
+  .red-title{
+    color:rgb(167, 5, 5)
+  }
+  .slide-1 {
+    background-color: rgb(215, 215, 216);
+    font-size: 20px;
+  }
+  .slide-2 {
+  background-color: rgb(215, 215, 216);
+  }
+  .slide-3 {
+    background-color: rgb(215, 215, 216);
+  }
+  .slide-4 {
+    background-color: rgb(215, 215, 216);
+  }

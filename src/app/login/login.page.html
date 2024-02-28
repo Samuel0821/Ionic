@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center ion-text-capitalize" text-color="light">login</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <figure class="ion-text-center">
+    <ion-avatar class="center-avatar">
+      <img src="../../assets/images/4.png" alt="logo" class="logo">
+    </ion-avatar>
+  </figure>
+<form [formGroup]="loginForm"(ngSubmit)= "login(loginForm.value)">
+  <ion-item>
+    <ion-input label="Correo:" labelPlacement="floating" placeholder="Ingresa tu correo:"formControlName="email"></ion-input>
+  </ion-item>
+  <div class="validation message">
+    <ng-container *ngFor="let validation of validation_messages.email">
+      <div *ngIf="
+      (loginForm.get ('email')?.hasError (validation.type) &&
+       loginForm.get ('email')?.dirty)
+       ">{{validation.message}}</div>
+    </ng-container>
+  </div>
+  <ion-item>
+    <ion-input label="Contraseña:" labelPlacement="floating" placeholder="Ingresa tu contraseña:" formControlName="password" type="password"></ion-input>
+  </ion-item>
+  <div>
+    <ng-container *ngFor="let validation of validation_messages.password">
+      <div *ngIf="(loginForm.get('password')?.hasError(validation.type) && loginForm.get('password')?.dirty)">
+        {{validation.message}}
+      </div>
+    </ng-container>
+  </div>
+  <ion-button   type="submit" 
+  expand="block"
+  [disabled]="!loginForm.valid"
+  color="warning"
+  size="small"
+  shape="round"
+  >Login</ion-button>
+
+</form>
+<div class="validation_messages">
+  {{loginMessage}}
+</div>
+<ion-button routerLink="/registro" expand="block" color="secondary" size="small" shape="round">Registrarse</ion-button>
+</ion-content>
